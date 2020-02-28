@@ -1,0 +1,1 @@
+An error occurred when processing the image using DrawImageProcessor`2. See the inner exception for more detail.

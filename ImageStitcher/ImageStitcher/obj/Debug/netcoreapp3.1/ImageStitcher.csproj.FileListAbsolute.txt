@@ -1,0 +1,17 @@
+C:\Users\Jacob.Clark\source\repos\ImageStitcher\ImageStitcher\bin\Debug\netcoreapp3.1\ImageStitcher.exe
+C:\Users\Jacob.Clark\source\repos\ImageStitcher\ImageStitcher\obj\Debug\netcoreapp3.1\ImageStitcher.csprojAssemblyReference.cache
+C:\Users\Jacob.Clark\source\repos\ImageStitcher\ImageStitcher\obj\Debug\netcoreapp3.1\ImageStitcher.AssemblyInfoInputs.cache
+C:\Users\Jacob.Clark\source\repos\ImageStitcher\ImageStitcher\obj\Debug\netcoreapp3.1\ImageStitcher.AssemblyInfo.cs
+C:\Users\Jacob.Clark\source\repos\ImageStitcher\ImageStitcher\bin\Debug\netcoreapp3.1\SixLabors.Core.dll
+C:\Users\Jacob.Clark\source\repos\ImageStitcher\ImageStitcher\bin\Debug\netcoreapp3.1\SixLabors.ImageSharp.dll
+C:\Users\Jacob.Clark\source\repos\ImageStitcher\ImageStitcher\obj\Debug\netcoreapp3.1\ImageStitcher.csproj.CopyComplete
+C:\Users\Jacob.Clark\source\repos\ImageStitcher\ImageStitcher\bin\Debug\netcoreapp3.1\ImageStitcher.deps.json
+C:\Users\Jacob.Clark\source\repos\ImageStitcher\ImageStitcher\bin\Debug\netcoreapp3.1\ImageStitcher.runtimeconfig.json
+C:\Users\Jacob.Clark\source\repos\ImageStitcher\ImageStitcher\bin\Debug\netcoreapp3.1\ImageStitcher.runtimeconfig.dev.json
+C:\Users\Jacob.Clark\source\repos\ImageStitcher\ImageStitcher\bin\Debug\netcoreapp3.1\ImageStitcher.dll
+C:\Users\Jacob.Clark\source\repos\ImageStitcher\ImageStitcher\bin\Debug\netcoreapp3.1\ImageStitcher.pdb
+C:\Users\Jacob.Clark\source\repos\ImageStitcher\ImageStitcher\bin\Debug\netcoreapp3.1\SixLabors.Fonts.dll
+C:\Users\Jacob.Clark\source\repos\ImageStitcher\ImageStitcher\bin\Debug\netcoreapp3.1\SixLabors.ImageSharp.Drawing.dll
+C:\Users\Jacob.Clark\source\repos\ImageStitcher\ImageStitcher\bin\Debug\netcoreapp3.1\SixLabors.Shapes.dll
+C:\Users\Jacob.Clark\source\repos\ImageStitcher\ImageStitcher\obj\Debug\netcoreapp3.1\ImageStitcher.dll
+C:\Users\Jacob.Clark\source\repos\ImageStitcher\ImageStitcher\obj\Debug\netcoreapp3.1\ImageStitcher.pdb
