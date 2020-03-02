@@ -25,7 +25,6 @@ C:\Users\water\Documents\GitHub\ImageStitcher\ImageStitcher\ImageStitcher\bin\Re
 C:\Users\water\Documents\GitHub\ImageStitcher\ImageStitcher\ImageStitcher\bin\Release\netcoreapp3.1\SixLabors.ImageSharp.dll
 C:\Users\water\Documents\GitHub\ImageStitcher\ImageStitcher\ImageStitcher\bin\Release\netcoreapp3.1\SixLabors.ImageSharp.Drawing.dll
 C:\Users\water\Documents\GitHub\ImageStitcher\ImageStitcher\ImageStitcher\bin\Release\netcoreapp3.1\SixLabors.Shapes.dll
-C:\Users\water\Documents\GitHub\ImageStitcher\ImageStitcher\ImageStitcher\obj\Release\netcoreapp3.1\ImageStitcher.csprojAssemblyReference.cache
 C:\Users\water\Documents\GitHub\ImageStitcher\ImageStitcher\ImageStitcher\obj\Release\netcoreapp3.1\ImageStitcher.AssemblyInfoInputs.cache
 C:\Users\water\Documents\GitHub\ImageStitcher\ImageStitcher\ImageStitcher\obj\Release\netcoreapp3.1\ImageStitcher.AssemblyInfo.cs
 C:\Users\water\Documents\GitHub\ImageStitcher\ImageStitcher\ImageStitcher\obj\Release\netcoreapp3.1\ImageStitcher.csproj.CopyComplete

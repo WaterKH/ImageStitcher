@@ -11,7 +11,6 @@ namespace ImageStitcher
     {
         public ImageLayer Process(string[] files, int suppliedRowCount = 0)
         {
-            var imageLayer = new ImageLayer();
 
             var (rowCount, images) = this.FindRowSize(files);
 
@@ -21,9 +20,12 @@ namespace ImageStitcher
             var firstImage = images.FirstOrDefault().Value;
             var yOffset = 0;
 
-            /*using */var stitchedImage = new Image<Rgba32>(rowCount * firstImage.Width, (files.Length / rowCount) * firstImage.Height);
+            if (rowCount == 0)
+                return null;
+                
+            var stitchedImage = new Image<Rgba32>(rowCount * firstImage.Width, (files.Length / rowCount) * firstImage.Height);
 
-            foreach(var kv in images)
+            foreach(var kv in images.OrderBy(x => x.Key))
             {
                 var image = kv.Value;
                 var index = kv.Key;
@@ -39,10 +41,11 @@ namespace ImageStitcher
             //    File.Delete(file);
             //}
 
-            imageLayer.Image = stitchedImage;
-            imageLayer.RowCount = rowCount;
-
-            return imageLayer;
+            return new ImageLayer
+            {
+                Image = stitchedImage,
+                RowCount = rowCount
+            };
         }
 
         public (int RowCount, Dictionary<int, Image> Images) FindRowSize(string[] files)
@@ -56,7 +59,8 @@ namespace ImageStitcher
             var images = new Dictionary<int, Image>();
             Image<Rgba32> nextImage = null;
 
-            for(int i = 0; i < files.Length; ++i)
+            var index = 0;
+            for(int i = files.Length - 1; i >= 0; --i)
             {
                 Image<Rgba32> image;
 
@@ -72,47 +76,57 @@ namespace ImageStitcher
 
                 images.Add(i, image);
 
-                if (rowCount != 0)
+                if (rowCount != 0 || i == files.Length - 1)
                     continue;
+                
+                ++index;
 
                 if(Utilities.CheckImageForPixels(image, 255))
                 {
-                    if (files.Length % (i + 1) == 0)
+                    if(files.Length % (index) == 0)
                     {
-                        rowCount = i + 1;
-                        continue;
+                        rowCount = index;
                     }
                 }
-                else if(Utilities.CheckImageForPixels(image, 0))
-                {
-                    images.TryGetValue(i - 1, out var prevImage);
 
-                    if(prevImage != null)
-                    {
-                        if (Utilities.CheckImageForPixels(image, 255))
-                        {
-                            if (files.Length % (i + 1) == 0)
-                            {
-                                rowCount = i + 1;
-                                continue;
-                            }
-                        }
-                    }
+                //if(Utilities.CheckImageForPixels(image, 255))
+                //{
+                //    if (files.Length % (i + 1) == 0)
+                //    {
+                //        rowCount = i + 1;
+                //        continue;
+                //    }
+                //}
+                //else if(Utilities.CheckImageForPixels(image, 0))
+                //{
+                //    images.TryGetValue(i - 1, out var prevImage);
 
-                    if(i + 1 < files.Length)
-                    {
-                        nextImage = Image.Load<Rgba32>(files[i + 1]);
+                //    if(prevImage != null)
+                //    {
+                //        if (Utilities.CheckImageForPixels(image, 255))
+                //        {
+                //            if (files.Length % (i + 1) == 0)
+                //            {
+                //                rowCount = i + 1;
+                //                continue;
+                //            }
+                //        }
+                //    }
 
-                        if (Utilities.CheckImageForPixels(image, 255))
-                        {
-                            if (files.Length % (i + 1) == 0)
-                            {
-                                rowCount = i + 1;
-                                continue;
-                            }
-                        }
-                    }
-                }
+                //    if(i + 1 < files.Length)
+                //    {
+                //        nextImage = Image.Load<Rgba32>(files[i + 1]);
+
+                //        if (Utilities.CheckImageForPixels(image, 255))
+                //        {
+                //            if (files.Length % (i + 1) == 0)
+                //            {
+                //                rowCount = i + 1;
+                //                continue;
+                //            }
+                //        }
+                //    }
+                //}
             }
 
             return (rowCount, images);
