@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jacob.Clark\\source\\repos\\ImageStitcher\\ImageStitcher\\ImageStitcher.csproj": {}
+    "C:\\Users\\water\\Documents\\GitHub\\ImageStitcher\\ImageStitcher\\ImageStitcher\\ImageStitcher.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jacob.Clark\\source\\repos\\ImageStitcher\\ImageStitcher\\ImageStitcher.csproj": {
+    "C:\\Users\\water\\Documents\\GitHub\\ImageStitcher\\ImageStitcher\\ImageStitcher\\ImageStitcher.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jacob.Clark\\source\\repos\\ImageStitcher\\ImageStitcher\\ImageStitcher.csproj",
+        "projectUniqueName": "C:\\Users\\water\\Documents\\GitHub\\ImageStitcher\\ImageStitcher\\ImageStitcher\\ImageStitcher.csproj",
         "projectName": "ImageStitcher",
-        "projectPath": "C:\\Users\\Jacob.Clark\\source\\repos\\ImageStitcher\\ImageStitcher\\ImageStitcher.csproj",
-        "packagesPath": "C:\\Users\\Jacob.Clark\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jacob.Clark\\source\\repos\\ImageStitcher\\ImageStitcher\\obj\\",
+        "projectPath": "C:\\Users\\water\\Documents\\GitHub\\ImageStitcher\\ImageStitcher\\ImageStitcher\\ImageStitcher.csproj",
+        "packagesPath": "C:\\Users\\water\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\water\\Documents\\GitHub\\ImageStitcher\\ImageStitcher\\ImageStitcher\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\",
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Jacob.Clark\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\water\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -27,7 +27,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "\\\\fs2\\iglobal\\nugetrepository": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
